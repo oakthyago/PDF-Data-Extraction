@@ -22,10 +22,15 @@ Os dados extraídos das notas fiscais são considerados **dados não estruturado
 
 ---
 
-## 📌 Etapas (Steps):
+## Primeiro Código:
 
 - **Extrai dados de arquivos PDF** usando bibliotecas como `pdfplumber`.
 - **Limpa os dados extraídos** para garantir a precisão e consistência.
 - **Identifica e recupera os valores** de quantidade e preço unitário das notas fiscais.
 - **Coleta a coluna NCM** (Nomenclatura Comum do Mercosul) para verificar a elegibilidade de itens financiáveis através do site do BNDES Finame.
 - **Soma diretamente os valores** dos itens financiáveis para posterior análise.
+
+
+---
+
+**Next Step:** Create a process to extract the total value of each invoice and compare it with the result of multiplying the unit value by the quantity, performing a validation of the results.
